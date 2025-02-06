@@ -1,6 +1,6 @@
 #### registro-transacoes-bancarias
 
-### Desafio de código - Aula DIO Pyhton Bootcamp
+### Desafio de código - Aula DIO Python Bootcamp
 
 ### Descrição
 
