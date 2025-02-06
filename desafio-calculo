@@ -1,0 +1,25 @@
+def calcular_saldo(transacoes):
+    saldo = 0
+
+    # Itere sobre cada transação na lista:
+    for transacao in transacoes:
+        # Adicione o valor da transação ao saldo
+        saldo += transacao
+
+    # Retorne o saldo formatado em moeda brasileira com duas casas decimais:
+    return f"Saldo: R$ {saldo:.2f}"
+
+# Entrada do usuário
+entrada_usuario = input()
+
+# Remover colchetes e espaços em branco desnecessários
+entrada_usuario = entrada_usuario.strip("[]").replace(" ", "")
+
+# Converter a entrada em uma lista de transações (float)
+transacoes = [float(valor) for valor in entrada_usuario.split(",")]
+
+# Calcule o saldo com base nas transações informadas:
+resultado = calcular_saldo(transacoes)
+
+# Imprime o resultado
+print(resultado)
